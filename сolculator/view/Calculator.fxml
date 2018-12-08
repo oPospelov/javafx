@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="сolculator.controller.Controller">
+
+    <top>
+        <TextField prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER" fx:id="textField"/>
+    </top>
+    <center>
+        <GridPane prefHeight="356.0" prefWidth="564.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="4"
+                        GridPane.rowIndex="1"
+                        onAction="#signInClicked4"  fx:id="4"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="7"
+                        onAction="#signInClicked7" fx:id="7"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="8" GridPane.columnIndex="1"
+                        onAction="#signInClicked8" fx:id="8"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="9" GridPane.columnIndex="2"
+                        onAction="#signInClicked9" fx:id="9"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="5" GridPane.columnIndex="1"
+                        GridPane.rowIndex="1"
+                        onAction="#signInClicked5" fx:id="5"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="6" GridPane.columnIndex="2"
+                        GridPane.rowIndex="1"
+                        onAction="#signInClicked6" fx:id="6"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="1" GridPane.rowIndex="2"
+                        onAction="#signInClicked1" fx:id="1"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="3" GridPane.columnIndex="2"
+                        GridPane.rowIndex="2"
+                        onAction="#signInClicked3" fx:id="3"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="0" GridPane.rowIndex="3"
+                        onAction="#signInClicked0" fx:id="0"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="." GridPane.columnIndex="1"
+                        GridPane.rowIndex="3"
+                        onAction="#signInClickedpoint" fx:id="point"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="=" GridPane.columnIndex="2"
+                        GridPane.rowIndex="3"
+                        onAction="#signInClickedequally" fx:id="equally"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="2" GridPane.columnIndex="1"
+                        GridPane.rowIndex="2"
+                        onAction="#signInClicked2" fx:id="2"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="50.0" text="+" GridPane.columnIndex="3"
+                        onAction="#signInClickedplus" fx:id="plus"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="50.0" text="-" GridPane.columnIndex="3"
+                        GridPane.rowIndex="1"
+                        onAction="#signInClickedminus" fx:id="minus"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="50.0" text="x" GridPane.columnIndex="3"
+                        GridPane.rowIndex="2"
+                        onAction="#signInClickedmultiply" fx:id="multiply"/>
+                <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="50.0" text="/" GridPane.columnIndex="3"
+                        GridPane.rowIndex="3"
+                        onAction="#signInClickedshare" fx:id="share"/>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>
